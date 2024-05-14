@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = [1,1,2,3,5];
+
+        var result = number.map(function(number){
+            return number+5;
+        })
+        console.log(result)
+    </script>
+
+
+    <script>
+        const words = ['planes','trains','automobiles']
+
+        const wordswithout_s = words.map(words =>{
+            return words.slice(0,-1);
+        })
+        console.log(wordswithout_s)
+    </script>
+
+    <script>
+        const word = ['planes','trains','automobiles']
+
+        const wordswithouts = word.map(woord =>{
+            return woord.slice(0,1);
+        })
+        console.log(wordswithouts)
+    </script>
+
+    <script>
+        const letters = ['planes','trains','automobiles']
+
+        const capital = letters.map(letter => {
+            return letter.charAt(0).toUpperCase()+letter.slice(1);
+        })
+        console.log(capital)
+    </script>
+
+    <script>
+        const animals = ['dog','tiger','giraffi','cat','black mamba']
+
+        const filanimal = animals.filter(animal =>{
+            return animal.length <= 5;
+        })
+        console.log(filanimal)
+    </script>
+
+    <script>
+        const animal = ['turtle','giraffi','tiger','lion']
+
+        const startlet = animal.filter(startletter =>{
+            return startletter.charAt(0)==="t"
+        })
+        console.log(startlet)
+    </script>
+
+    <script>
+        const num = [1,9,7,5,6,3,4,8]
+
+        const greaternum = num.filter(greaternumber => {
+            return greaternumber >4;
+        })
+        console.log(greaternum)
+    </script>
+</body>
+</html>
